@@ -1,6 +1,8 @@
+from comparable import Comparable
 from typing import Optional, TypeVar, Generic
 
-T = TypeVar("T")
+
+T = TypeVar("T", bound=Comparable)
 
 
 class Node(Generic[T]):
